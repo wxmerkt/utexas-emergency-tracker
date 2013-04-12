@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= result.title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+    body { background:<%= bgcolor %>;}
+    </style>
+  </head>
+  <body>
+    <h1><%= result.title %></h1>
+    <h2><%= result.statustitle %> (Level <%= result.statuslvl %>)</h2>
+    <p><em>Last update: <%= result.pubDate %></em></p>
+    <p><%= result.statusdesc %><br /><a href="<%= result.link %>" target="_blank" title="Go to the UT Emergency website">More information</a>.</p>
+  </body>
+</html>
